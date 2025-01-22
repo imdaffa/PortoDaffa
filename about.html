@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .about-page {
+            display: flex;
+            height: 150vh;
+        }
+        .about-content {
+            padding: 20px;
+            width: 80%;
+            margin: 400px;
+            margin-top: 0;
+        }
+        .about-section {
+            margin-bottom: 40px;
+        }
+        .about-section h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e67e22;
+            display: inline-block;
+        }
+        .progress-bar-container {
+            margin-top: 10px;
+        }
+        .progress-bar {
+            width: 100%;
+            background: #ddd;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 10px;
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+            border-radius: 5px;
+        }
+        .about-img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .about-img img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-page">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Fotodaffa2.JPG" alt="Profile Picture" style="width:80%; height: auto;">
+                <h2>Muhammad Daffa</h2>
+                <p>Student Of Surabaya State University</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </aside>
+        <main class="about-content">
+            <h1>About Me</h1>
+            <div class="about-section">
+                <div class="about-img">
+                    <img src="batudaffa.jpg" alt="Muhammad Daffa">
+                </div>
+                <p class="justify-text">
+                    Hello, <strong> am Muhammad Daffa</strong>, a Digital Business undergraduate with a strong passion for design and digital development. 
+                    I have skills in graphic design, such as creating visually appealing content for branding and presentations, as well as public speaking abilities that enable me to communicate ideas clearly and effectively. 
+                    In addition, I possess foundational programming knowledge in HTML, CSS, JavaScript, and PHP, along with database management using MySQL. 
+                    With these skills, I can develop simple websites, design engaging user interfaces, and manage data efficiently. 
+                    I believe that creativity and technical expertise are key strengths in navigating the challenges of the digital world.
+                </p>
+                <p class="justify-text">
+                    Whether it's creating stunning visuals, capturing life's moments through photography, or crafting innovative designs,
+                    I strive to bring creativity and precision to everything I do. Let's create something amazing together!
+                </p>
+            </div>
+
+            <div class="skills-section">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>
+                        <strong>Public Speaking</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Team Collaboration</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Problem Solving</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>English Proficiency</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="skills-section">
+                <h2>Hard Skills</h2>
+                <ul>
+                    <li>
+                        <strong>Photography</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Graphic Design</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Video Editing</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Web Design</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Fundamental Programming Skills</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>

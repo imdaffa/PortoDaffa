@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .resume-page {
+            display: flex;
+            height: 100vh;
+        }
+        .resume-content {
+            padding: 50px;
+            width: 50%;
+            margin: 300px;
+            margin-top: -20px;
+        }
+        .resume-section {
+            margin-bottom: 10px;
+        }
+        .resume-section h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e67e22;
+            display: inline-block;
+        }
+        .resume-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .resume-section ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .progress-bar-container {
+            margin-top: 10px;
+        }
+        .progress-bar {
+            width: 100%;
+            background: #ddd;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 10px;
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-page">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Fotodaffa2.JPG" alt="Profile Picture" style="width:80%; height: auto;">
+                <h2>Muhammad Daffa</h2>
+                <p>Student Of Surabaya State University</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="resume-content">
+            <h1>Resume</h1>
+
+            <div class="resume-section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>SD Negeri Harapan Jaya VII</strong> - Digital Business (2011 - 2017)</li>
+                    <li><strong>SMP Islam Tahta Syajar</strong> - Digital Business (2017 - 2020)</li>
+                    <li><strong>SMA Negeri 4 Bekasi</strong> - Digital Business (2020 - 2023)</li>
+                    <li><strong>Universitas Negeri Surabaya</strong> - Digital Business (2023 - Present)</li>
+
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h2>Experience</h2>
+                <ul>
+                    <li><strong>Freelance Graphic Designer</strong> - Branding, poster design, social media (2020 - Present)</li>
+                    <li><strong>Freelance Photographer</strong> - Events, portraits, product photography (2019 - Present)</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Adobe Certified Professional - Graphic Design (2023)</li>
+                    <li>Creative Photography Workshop (2022)</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>
+                        <strong>Graphic Design</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Photography</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Web Design</strong>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
